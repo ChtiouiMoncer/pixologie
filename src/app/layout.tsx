@@ -34,7 +34,7 @@ export default async function RootLayout({
     localeHeader && isLocale(localeHeader) ? localeHeader : defaultLocale;
 
   const themeCookie = (await cookies()).get("pixologie-theme")?.value;
-  const themeClass = themeCookie === "light" ? "light" : "dark";
+  const themeClass = themeCookie === "dark" ? "dark" : "light";
 
   return (
     <html
