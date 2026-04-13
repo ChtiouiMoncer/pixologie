@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light: Apple-adjacent neutrals (product / marketing pages) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --page: #f5f5f7;
+  --surface: #ffffff;
+  --surface-muted: #ebebf0;
+  --surface-glass: rgba(255, 255, 255, 0.72);
+  --label: #1d1d1f;
+  --label-secondary: #6e6e73;
+  --label-tertiary: #86868b;
+  --border: rgba(60, 60, 67, 0.18);
+  --border-subtle: rgba(60, 60, 67, 0.12);
+  --control-fill: rgba(120, 120, 128, 0.08);
+  --control-fill-hover: rgba(120, 120, 128, 0.12);
+  --blue: #0066cc;
+  --blue-muted: rgba(0, 102, 204, 0.12);
+  --cta-bg: #1d1d1f;
+  --cta-fg: #ffffff;
+  --cta-hover: #424245;
+  --shadow-card: 0 2px 24px -8px rgba(0, 0, 0, 0.06),
+    0 8px 40px -16px rgba(0, 0, 0, 0.05);
+  --shadow-nav: 0 0 1px rgba(0, 0, 0, 0.04), 0 8px 24px -6px rgba(0, 0, 0, 0.06);
+  --glow-indigo: rgba(0, 102, 204, 0.12);
+  --glow-violet: rgba(88, 86, 214, 0.1);
+  --hairline: rgba(0, 0, 0, 0.06);
+}
+
+.dark {
+  --page: #09090b;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-muted: #09090b;
+  --surface-glass: rgba(9, 9, 11, 0.78);
+  --label: #f5f5f7;
+  --label-secondary: #a1a1aa;
+  --label-tertiary: #71717a;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --control-fill: rgba(255, 255, 255, 0.06);
+  --control-fill-hover: rgba(255, 255, 255, 0.1);
+  --blue: #2997ff;
+  --blue-muted: rgba(41, 151, 255, 0.15);
+  --cta-bg: #ffffff;
+  --cta-fg: #09090b;
+  --cta-hover: #e5e5e7;
+  --shadow-card: none;
+  --shadow-nav: none;
+  --glow-indigo: rgba(99, 102, 241, 0.2);
+  --glow-violet: rgba(139, 92, 246, 0.15);
+  --hairline: rgba(255, 255, 255, 0.06);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-glass: var(--surface-glass);
+  --color-label: var(--label);
+  --color-label-secondary: var(--label-secondary);
+  --color-label-tertiary: var(--label-tertiary);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-control: var(--control-fill);
+  --color-control-hover: var(--control-fill-hover);
+  --color-apple-blue: var(--blue);
+  --color-apple-blue-muted: var(--blue-muted);
+  --color-cta: var(--cta-bg);
+  --color-cta-fg: var(--cta-fg);
+  --color-cta-hover: var(--cta-hover);
+  --color-hairline: var(--hairline);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background-color: var(--page);
+  color: var(--label);
+}
+
+::selection {
+  background: rgba(0, 102, 204, 0.2);
+  color: #1d1d1f;
+}
+
+.dark ::selection {
+  background: rgba(99, 102, 241, 0.35);
+  color: #fafafa;
+}
+
+/* Duplicated track: half width = one logo set; loop moves content left → right across the viewport */
+@keyframes partner-marquee-ltr {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.partner-marquee {
+  width: max-content;
+  will-change: transform;
+  animation: partner-marquee-ltr 38s linear infinite;
+}
+
+.partner-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-marquee {
+    animation: none;
+    transform: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1rem;
+    width: 100%;
+    max-width: 56rem;
+    margin-inline: auto;
+  }
 }
