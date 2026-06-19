@@ -15,12 +15,29 @@ type FormStatus = "idle" | "success";
 export function Contact({ dict }: Props) {
   const [status, setStatus] = useState<FormStatus>("idle");
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
+    const formData = new FormData(form);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.get("name"),
+        email: formData.get("email"),
+        company: formData.get("company"),
+        message: formData.get("message"),
+        website: formData.get("website"), // honeypot
+      }),
+    });
+    if (!res.ok) {
+      // show error from dict
+      return;
+    }
     setStatus("success");
     form.reset();
   }
+  
 
   const fieldClass =
     "h-11 rounded-xl border border-border bg-surface px-3 text-sm text-label outline-none transition placeholder:text-label-tertiary focus:border-apple-blue focus:ring-2 focus:ring-apple-blue/20 dark:border-white/10 dark:bg-zinc-950/80 dark:text-white dark:focus:border-indigo-400/50 dark:focus:ring-indigo-500/30";

@@ -3,10 +3,10 @@ import type { Dictionary } from "@/types/dictionary";
 const dictionary: Dictionary = {
   meta: {
     siteName: "Pixologie",
-    title: "Pixologie — Agence de marketing digital",
+    title: "Pixologie",
     description:
       "Pixologie aide les marques ambitieuses à croître grâce à une stratégie orientée performance, des campagnes créatives et des résultats mesurables.",
-    ogTitle: "Pixologie — Agence de marketing digital",
+    ogTitle: "Pixologie - Agence de marketing digital",
     ogDescription:
       "Stratégie, création et performance dans un seul partenaire. Construisez une demande qui convertit.",
   },

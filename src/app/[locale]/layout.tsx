@@ -25,14 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     metadataBase: new URL(site),
     title: dict.meta.title,
     description: dict.meta.description,
-    openGraph: {
-      title: dict.meta.ogTitle,
-      description: dict.meta.ogDescription,
-      url: `${site}/${locale}`,
-      siteName: dict.meta.siteName,
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      type: "website",
-    },
+  
     twitter: {
       card: "summary_large_image",
       title: dict.meta.ogTitle,

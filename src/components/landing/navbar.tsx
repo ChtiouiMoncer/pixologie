@@ -6,6 +6,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { Locale, NavDict } from "@/types/dictionary";
 import { LanguageSwitcher } from "./language-switcher";
 import { ThemeToggle } from "./theme-toggle";
+import Image from "next/image";
+
 
 type Props = {
   dict: NavDict;
@@ -36,12 +38,28 @@ export function Navbar({ dict, locale }: Props) {
         className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8"
         aria-label="Primary"
       >
-        <Link
-          href={base}
-          className="text-base font-semibold tracking-tight text-label sm:text-lg"
-        >
-          {dict.brand}
-        </Link>
+      <Link
+      href={base}
+      className="flex shrink-0 items-center"
+      aria-label={dict.brand}
+      >
+      <Image
+        src="/logos/logo.png"
+        alt={dict.brand}
+        width={140}
+        height={36}
+        priority
+        className="h-8 w-auto sm:h-9 dark:hidden"
+      />
+      <Image
+        src="/logos/logo_dm.png"
+        alt={dict.brand}
+        width={140}
+        height={36}
+        priority
+        className="hidden h-8 w-auto sm:h-9 dark:block"
+      />
+      </Link>
 
         <div className="hidden items-center gap-6 md:flex lg:gap-8">
           <ul className="flex items-center gap-6 text-sm text-label-secondary">

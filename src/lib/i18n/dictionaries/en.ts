@@ -3,10 +3,10 @@ import type { Dictionary } from "@/types/dictionary";
 const dictionary: Dictionary = {
   meta: {
     siteName: "Pixologie",
-    title: "Pixologie — Digital Marketing Agency",
+    title: "Pixologie",
     description:
       "Pixologie helps ambitious brands grow with performance-led strategy, creative campaigns, and measurable results.",
-    ogTitle: "Pixologie — Digital Marketing Agency",
+    ogTitle: "Pixologie - Digital Marketing Agency",
     ogDescription:
       "Strategy, creative, and performance in one partner. Build demand that converts.",
   },

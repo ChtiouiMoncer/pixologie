@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Pixologie",
-    template: "%s · Pixologie",
-  },
+  title: "Pixologie",
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/logos/favicon.ico",
+  },
 };
 
 export default async function RootLayout({
