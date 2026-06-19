@@ -158,7 +158,14 @@ const dictionary: Dictionary = {
         role: "Photographer",
         description:
           "Captures brand and product stories through photography—studio, lifestyle, and content for digital and print.",
-        imageSrc: "/team/nada.PNG",
+        imageSrc: "/team/nada.png",
+      },
+      {
+        name: "Nader",
+        role: "Web Developer",
+        description:
+          "Builds responsive, conversion-focused websites—front-end implementation, smooth integrations, and launch-ready delivery.",
+        imageSrc: "/team/nader.png",
       },
     ],
   },

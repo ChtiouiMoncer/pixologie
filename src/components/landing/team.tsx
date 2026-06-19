@@ -33,7 +33,7 @@ export function Team({ dict }: Props) {
         />
 
         <motion.ul
-          className="mt-14 grid gap-5 md:grid-cols-3"
+          className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"
           variants={stagger}
           initial="hidden"
           whileInView="visible"
@@ -51,11 +51,11 @@ export function Team({ dict }: Props) {
                   alt={member.name}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   unoptimized
                 />
               </div>
-              <div className="flex flex-col p-6 sm:p-8">
+              <div className="flex flex-col p-5 sm:p-6 lg:p-5">
                 <h3 className="text-lg font-semibold text-label dark:text-white">
                   {member.name}
                 </h3>

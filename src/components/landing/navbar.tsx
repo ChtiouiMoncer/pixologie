@@ -49,7 +49,7 @@ export function Navbar({ dict, locale }: Props) {
         width={140}
         height={36}
         priority
-        className="h-8 w-auto sm:h-9 dark:hidden"
+        className="h-6 w-auto sm:h-8 md:h-9 dark:hidden"
       />
       <Image
         src="/logos/logo_dm.png"
@@ -57,7 +57,7 @@ export function Navbar({ dict, locale }: Props) {
         width={140}
         height={36}
         priority
-        className="hidden h-8 w-auto sm:h-9 dark:block"
+        className="hidden h-6 w-auto sm:h-8 md:h-9 dark:block"
       />
       </Link>
 

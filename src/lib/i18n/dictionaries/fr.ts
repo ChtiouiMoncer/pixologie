@@ -162,7 +162,14 @@ const dictionary: Dictionary = {
         role: "Photographe",
         description:
           "Raconte la marque et les produits en images—studio, lifestyle et contenus photo pour le digital et le print.",
-        imageSrc: "/team/nada.PNG",
+        imageSrc: "/team/nada.png",
+      },
+      {
+        name: "Nader",
+        role: "Développeur web",
+        description:
+          "Conçoit des sites web responsives et orientés conversion—intégration front-end, connexions fluides et livraison prête à la mise en ligne.",
+        imageSrc: "/team/nader.png",
       },
     ],
   },
