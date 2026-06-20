@@ -27,7 +27,7 @@ function PartnerMark({
 }) {
   if (logoSrc) {
     return (
-      <div className="flex h-20 w-44 shrink-0 items-center justify-center px-3 sm:h-20 sm:w-44">
+      <div className="partner-logo-shell">
         <Image
           src={logoSrc}
           alt={name}
@@ -42,7 +42,7 @@ function PartnerMark({
 
   return (
     <div
-      className="flex h-20 w-44 shrink-0 items-center justify-center rounded-2xl border border-border-subtle bg-control px-3 text-base font-semibold tracking-wide text-label-secondary dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400"
+      className="partner-logo-shell items-center justify-center rounded-2xl border border-border-subtle bg-control text-base font-semibold tracking-wide text-label-secondary dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400"
       role="img"
       aria-label={name}
     >

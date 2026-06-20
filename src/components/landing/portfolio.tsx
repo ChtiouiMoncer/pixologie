@@ -66,7 +66,7 @@ export function Portfolio({ dict }: Props) {
                     width={80}
                     height={80}
                     unoptimized
-                    className="max-h-full max-w-full object-contain"
+                    className="max-h-full max-w-full object-contain dark:brightness-0 dark:invert"
                   />
                 </div>
               ) : null}

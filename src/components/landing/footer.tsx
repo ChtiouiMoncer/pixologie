@@ -34,7 +34,7 @@ export function Footer({ dict }: Props) {
               </span>
             </a>
             <a
-              href={`tel:${dict.phoneTel}`}
+              href={`tel:${dict.phone}`}
               className="group flex items-center justify-between rounded-2xl border border-border bg-surface px-4 py-3 text-sm transition hover:border-apple-blue/50 hover:bg-apple-blue-muted/50 dark:border-white/12 dark:bg-white/[0.03] dark:hover:border-apple-blue/40 dark:hover:bg-white/[0.07]"
             >
               <span className="text-label-secondary dark:text-zinc-400">Phone</span>

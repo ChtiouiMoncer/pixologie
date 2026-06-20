@@ -207,9 +207,8 @@ const dictionary: Dictionary = {
     rights: "Tous droits réservés.",
     address: "IMM GLOULOU 4000, Sousse ville, Sousse",
     email: "contact@pixologie.agency",
-    phone: "+216 52 956 813",
-    phoneTel: "+21623664317",
-  },
+    phone: "+216 23 664 317"
+    },
 };
 
 export default dictionary;
