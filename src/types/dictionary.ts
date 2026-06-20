@@ -110,7 +110,6 @@ export type FooterDict = {
   address: string;
   email: string;
   phone: string;
-  phoneTel: string;
 };
 
 export type Dictionary = {
