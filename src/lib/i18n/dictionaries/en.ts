@@ -155,7 +155,7 @@ const dictionary: Dictionary = {
       },
       {
         name: "Med",
-        role: "UX/UI & Graphic Designer",
+        role: "UI/UX & Graphic Designer",
         description:
           "Shapes interfaces and brand systems with clear user flows, visual identity, and polished design for web and campaigns.",
         imageSrc: "/team/med.png",
