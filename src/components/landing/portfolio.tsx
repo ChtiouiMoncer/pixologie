@@ -96,7 +96,7 @@ export function Portfolio({ dict }: Props) {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`${dict.livePreview} — ${project.name}`}
+                      aria-label={`${dict.livePreview}, ${project.name}`}
                       className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-2 text-sm font-medium text-label shadow-sm transition hover:border-apple-blue hover:bg-apple-blue-muted hover:text-apple-blue dark:border-white/15 dark:bg-white/[0.06] dark:text-zinc-100 dark:hover:border-apple-blue dark:hover:bg-white/[0.1] dark:hover:text-white"
                     >
                       <ExternalLinkIcon className="shrink-0 opacity-80" />

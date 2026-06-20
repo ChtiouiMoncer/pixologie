@@ -43,7 +43,7 @@ export function Services({ dict }: Props) {
                 className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-apple-blue/15 bg-apple-blue-muted text-apple-blue transition group-hover:border-apple-blue/30 group-hover:bg-apple-blue/15 dark:border-apple-blue/20 dark:bg-apple-blue/10"
                 aria-hidden
               >
-                <Icon className="h-6 w-6" />
+                <Icon className="h-6 w-6" strokeWidth={1.75} />
               </div>
               <h3 className="text-lg font-semibold text-label dark:text-white">
                 {item.title}
@@ -55,7 +55,7 @@ export function Services({ dict }: Props) {
                 {item.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-full border border-border-subtle bg-apple-blue-muted px-2.5 py-1 text-xs font-medium text-label-secondary dark:border-white/10 dark:bg-white/[0.03] dark:text-zinc-300"
+                    className="rounded-full border border-border-subtle bg-control px-2.5 py-1 text-xs font-medium text-label-secondary dark:border-white/10 dark:bg-white/[0.06] dark:text-zinc-300"
                   >
                     {tag}
                   </li>

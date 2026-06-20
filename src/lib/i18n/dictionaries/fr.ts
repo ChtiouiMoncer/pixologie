@@ -30,11 +30,11 @@ const dictionary: Dictionary = {
     skipToContent: "Aller au contenu",
   },
   hero: {
-    badge: "Agence digitale — Web & Marketing",
+    badge: "Agence digitale, Web & Marketing",
     titleStart: "Une demande qui devient ",
     titleAccent: "inévitable.",
     subtitle:
-      "Nous concevons des sites web performants et des stratégies marketing orientées croissance — en combinant storytelling, acquisition et design de conversion pour créer un système cohérent où chaque interaction génère de la valeur.",
+      "Nous concevons des sites web performants et des stratégies marketing orientées croissance, en combinant storytelling, acquisition et design de conversion pour créer un système cohérent où chaque interaction génère de la valeur.",
     primaryCta: "Discutons-en",
     secondaryCta: "Voir des références",
     stats: [
@@ -148,34 +148,34 @@ const dictionary: Dictionary = {
     sectionLabel: "Équipe",
     title: "Rencontrez l’équipe",
     subtitle:
-      "Développement, design et stratégie créative—réunis pour livrer des produits et des campagnes qui performent.",
+      "Développement, design et stratégie créative, réunis pour livrer des produits et des campagnes qui performent.",
     members: [
       {
         name: "Moncer",
         role: "Ingénieur logiciel",
         description:
-          "Conçoit des produits web performants et fiables—architecture, optimisation et code propre du prototype à la mise en ligne.",
+          "Conçoit des produits web performants et fiables, avec architecture, optimisation et code propre du prototype à la mise en ligne.",
         imageSrc: "/team/moncer.png",
       },
       {
         name: "Med",
         role: "Designer UX/UI & graphique",
         description:
-          "Donne forme aux interfaces et à l’identité visuelle—parcours utilisateurs, design system et rendu soigné pour le web et les campagnes.",
+          "Donne forme aux interfaces et à l’identité visuelle, avec parcours utilisateurs, design system et rendu soigné pour le web et les campagnes.",
         imageSrc: "/team/med.png",
       },
       {
         name: "Nada",
         role: "Photographe",
         description:
-          "Raconte la marque et les produits en images—studio, lifestyle et contenus photo pour le digital et le print.",
+          "Raconte la marque et les produits en images, en studio, lifestyle et contenus photo pour le digital et le print.",
         imageSrc: "/team/nada.png",
       },
       {
         name: "Nader",
         role: "Développeur web",
         description:
-          "Conçoit des sites web responsives et orientés conversion—intégration front-end, connexions fluides et livraison prête à la mise en ligne.",
+          "Conçoit des sites web responsives et orientés conversion, avec intégration front-end, connexions fluides et livraison prête à la mise en ligne.",
         imageSrc: "/team/nader.png",
       },
     ],
@@ -184,7 +184,7 @@ const dictionary: Dictionary = {
     sectionLabel: "Contact",
     title: "Parlez-nous de ce que vous construisez.",
     subtitle:
-      "Quelques lignes sur vos objectifs—nous répondons avec la suite et un calendrier réaliste.",
+      "Quelques lignes sur vos objectifs. Nous répondons avec la suite et un calendrier réaliste.",
     contactEmail: "contact@pixologie.agency",
     emailIntro: "Vous préférez l’e-mail ? Écrivez-nous à",
     form: {
@@ -195,7 +195,7 @@ const dictionary: Dictionary = {
       submit: "Envoyer",
       note: "Votre message est envoyé de façon sécurisée à notre équipe. Vous pouvez aussi nous écrire directement à l’adresse ci-dessus.",
       sending: "Envoi en cours…",
-      sent: "Merci—nous avons bien reçu votre message et vous répondrons bientôt.",
+      sent: "Merci, nous avons bien reçu votre message et vous répondrons bientôt.",
       sendError: "Une erreur s’est produite. Réessayez ou écrivez-nous directement.",
       configError:
         "L’envoi d’e-mails n’est pas encore configuré. Ajoutez RESEND_API_KEY sur le serveur (variables Vercel).",
@@ -203,7 +203,7 @@ const dictionary: Dictionary = {
   },
   footer: {
     brand: "Pixologie",
-    tagline: "Pixologie — croissance précise pour les marques modernes.",
+    tagline: "Pixologie, croissance précise pour les marques modernes.",
     rights: "Tous droits réservés.",
     address: "IMM GLOULOU 4000, Sousse ville, Sousse",
     email: "contact@pixologie.agency",

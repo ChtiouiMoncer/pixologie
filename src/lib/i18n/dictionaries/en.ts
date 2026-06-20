@@ -30,7 +30,7 @@ const dictionary: Dictionary = {
     skipToContent: "Skip to content",
   },
   hero: {
-    badge: "Digital Agency — Web & Marketing",
+    badge: "Digital Agency, Web & Marketing",
     titleStart: "Demand that becomes ",
     titleAccent: "inevitable.",
     subtitle:
@@ -84,7 +84,7 @@ const dictionary: Dictionary = {
     sectionLabel: "Why Pixologie",
     title: "A growth team fully integrated into your business.",
     subtitle:
-      "We act as an extension of your team—fast, aligned with your goals, and focused on performance.",
+      "We act as an extension of your team, fast, aligned with your goals, and focused on performance.",
   
     points: [
       {
@@ -144,34 +144,34 @@ const dictionary: Dictionary = {
     sectionLabel: "Team",
     title: "Meet the team",
     subtitle:
-      "Engineering, design, and creative strategy—working together to ship products and campaigns that perform.",
+      "Engineering, design, and creative strategy, working together to ship products and campaigns that perform.",
     members: [
       {
         name: "Moncer",
         role: "Software Engineer",
         description:
-          "Builds fast, reliable web products—architecture, performance, and clean code from prototype to production.",
+          "Builds fast, reliable web products with solid architecture, performance, and clean code from prototype to production.",
         imageSrc: "/team/moncer.png",
       },
       {
         name: "Med",
         role: "UX/UI & Graphic Designer",
         description:
-          "Shapes interfaces and brand systems—user flows, visual identity, and polished design for web and campaigns.",
+          "Shapes interfaces and brand systems with clear user flows, visual identity, and polished design for web and campaigns.",
         imageSrc: "/team/med.png",
       },
       {
         name: "Nada",
         role: "Photographer",
         description:
-          "Captures brand and product stories through photography—studio, lifestyle, and content for digital and print.",
+          "Captures brand and product stories through photography, including studio, lifestyle, and content for digital and print.",
         imageSrc: "/team/nada.png",
       },
       {
         name: "Nader",
         role: "Web Developer",
         description:
-          "Builds responsive, conversion-focused websites—front-end implementation, smooth integrations, and launch-ready delivery.",
+          "Builds responsive, conversion-focused websites with front-end implementation, smooth integrations, and launch-ready delivery.",
         imageSrc: "/team/nader.png",
       },
     ],
@@ -180,7 +180,7 @@ const dictionary: Dictionary = {
     sectionLabel: "Contact",
     title: "Tell us what you are building.",
     subtitle:
-      "Share a few lines about your goals—we will reply with next steps and a realistic timeline.",
+      "Share a few lines about your goals. We will reply with next steps and a realistic timeline.",
     contactEmail: "contact@pixologie.agency",
     emailIntro: "Prefer email? Reach us at",
     form: {
@@ -191,7 +191,7 @@ const dictionary: Dictionary = {
       submit: "Send message",
       note: "Messages are sent securely to our team. You can also write to us directly at the address above.",
       sending: "Sending…",
-      sent: "Thanks—we received your message and will reply soon.",
+      sent: "Thanks, we received your message and will reply soon.",
       sendError: "Something went wrong. Please try again or email us directly.",
       configError:
         "Email delivery is not configured yet. Add RESEND_API_KEY on the server (see Vercel env).",
@@ -199,7 +199,7 @@ const dictionary: Dictionary = {
   },
   footer: {
     brand: "Pixologie",
-    tagline: "Pixologie — precision growth for modern brands.",
+    tagline: "Pixologie, precision growth for modern brands.",
     rights: "All rights reserved.",
     address: "IMM GLOULOU 4000, Sousse ville, Sousse",
     email: "contact@pixologie.agency",
