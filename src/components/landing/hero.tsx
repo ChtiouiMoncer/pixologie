@@ -50,7 +50,7 @@ export function Hero({ dict, locale }: Props) {
             className="text-balance text-4xl font-semibold tracking-tight text-label sm:text-5xl lg:text-6xl"
           >
             {dict.titleStart}
-            <span className="bg-gradient-to-r from-[#0066cc] via-label to-[#5856d6] bg-clip-text text-transparent dark:from-indigo-200 dark:via-white dark:to-violet-200">
+            <span className="bg-gradient-to-r from-[#ef462c] via-label to-[#ef462c]/75 bg-clip-text text-transparent dark:from-[#ef462c] dark:via-white dark:to-[#f05a42]">
               {dict.titleAccent}
             </span>
           </motion.h1>

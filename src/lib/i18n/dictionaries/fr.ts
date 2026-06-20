@@ -35,7 +35,7 @@ const dictionary: Dictionary = {
     titleAccent: "inévitable.",
     subtitle:
       "Nous concevons des sites web performants et des stratégies marketing orientées croissance — en combinant storytelling, acquisition et design de conversion pour créer un système cohérent où chaque interaction génère de la valeur.",
-    primaryCta: "Débloquer votre croissance",
+    primaryCta: "Discutons-en",
     secondaryCta: "Voir des références",
     stats: [
       { value: "10+", label: "Projets livrés" },
@@ -55,24 +55,28 @@ const dictionary: Dictionary = {
       "Équipes modulaires, profils seniors et une ligne de responsabilité unique du brief au reporting.",
       items: [
         {
+          icon: "web",
           title: "Création de sites web",
           description:
             "Sites modernes, rapides et pensés pour convertir vos visiteurs en clients.",
           tags: ["Design", "Développement", "UX"],
         },
         {
+          icon: "marketing",
           title: "Marketing digital",
           description:
             "Stratégies d’acquisition via publicités et canaux digitaux pour générer de la croissance.",
           tags: ["Ads", "Social", "Search"],
         },
         {
+          icon: "brand",
           title: "Branding & identité",
           description:
             "Création d’univers de marque cohérents pour renforcer votre image et votre impact.",
           tags: ["Logo", "Design", "Direction artistique"],
         },
         {
+          icon: "performance",
           title: "Optimisation & performance",
           description:
             "Amélioration continue des performances web et marketing pour maximiser les résultats.",
@@ -114,6 +118,7 @@ const dictionary: Dictionary = {
         description:
           "Refonte de l’interface utilisateur et optimisation des opérations backend pour améliorer l’expérience et la performance globale.",
         result: "Interface modernisée + processus optimisés",
+        logoSrc: "/partners/riva.png",
         url: "https://rivatrip.com/",
       },
       {
@@ -122,6 +127,7 @@ const dictionary: Dictionary = {
         description:
           "Création d’un site e-commerce complet pour une marque tunisienne avec expérience d’achat optimisée et design moderne.",
         result: "Boutique en ligne prête à vendre",
+        logoSrc: "/partners/floral.jpg",
         url: "https://floralfashion.tn/",
       },
       {
@@ -130,6 +136,7 @@ const dictionary: Dictionary = {
         description:
           "Refonte complète du site web pour une entreprise spécialisée dans la fabrication et réparation de rideaux métalliques.",
         result: "Site moderne + image de marque améliorée",
+        logoSrc: "/partners/fmf.png",
         url: "https://www.rideaux-francemetal.fr/",
       },
     ],
@@ -201,7 +208,7 @@ const dictionary: Dictionary = {
     address: "IMM GLOULOU 4000, Sousse ville, Sousse",
     email: "contact@pixologie.agency",
     phone: "+216 52 956 813",
-    phoneTel: "+21652956813",
+    phoneTel: "+21623664317",
   },
 };
 

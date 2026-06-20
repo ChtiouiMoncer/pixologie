@@ -59,7 +59,7 @@ export function Team({ dict }: Props) {
                 <h3 className="text-lg font-semibold text-label dark:text-white">
                   {member.name}
                 </h3>
-                <p className="mt-1 text-sm font-medium text-apple-blue dark:text-indigo-200/90">
+                <p className="mt-1 text-sm font-medium text-apple-blue">
                   {member.role}
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-label-secondary dark:text-zinc-400">

@@ -15,16 +15,18 @@
   --border-subtle: rgba(60, 60, 67, 0.12);
   --control-fill: rgba(120, 120, 128, 0.08);
   --control-fill-hover: rgba(120, 120, 128, 0.12);
-  --blue: #0066cc;
-  --blue-muted: rgba(0, 102, 204, 0.12);
-  --cta-bg: #1d1d1f;
+  --brand: #ef462c;
+  --brand-hover: #d93d24;
+  --blue: #ef462c;
+  --blue-muted: rgba(239, 70, 44, 0.12);
+  --cta-bg: #ef462c;
   --cta-fg: #ffffff;
-  --cta-hover: #424245;
+  --cta-hover: #d93d24;
   --shadow-card: 0 2px 24px -8px rgba(0, 0, 0, 0.06),
     0 8px 40px -16px rgba(0, 0, 0, 0.05);
   --shadow-nav: 0 0 1px rgba(0, 0, 0, 0.04), 0 8px 24px -6px rgba(0, 0, 0, 0.06);
-  --glow-indigo: rgba(0, 102, 204, 0.12);
-  --glow-violet: rgba(88, 86, 214, 0.1);
+  --glow-indigo: rgba(239, 70, 44, 0.14);
+  --glow-violet: rgba(239, 70, 44, 0.08);
   --hairline: rgba(0, 0, 0, 0.06);
 }
 
@@ -40,15 +42,17 @@
   --border-subtle: rgba(255, 255, 255, 0.06);
   --control-fill: rgba(255, 255, 255, 0.06);
   --control-fill-hover: rgba(255, 255, 255, 0.1);
-  --blue: #2997ff;
-  --blue-muted: rgba(41, 151, 255, 0.15);
-  --cta-bg: #ffffff;
-  --cta-fg: #09090b;
-  --cta-hover: #e5e5e7;
+  --brand: #ef462c;
+  --brand-hover: #f05a42;
+  --blue: #ef462c;
+  --blue-muted: rgba(239, 70, 44, 0.18);
+  --cta-bg: #ef462c;
+  --cta-fg: #ffffff;
+  --cta-hover: #d93d24;
   --shadow-card: none;
   --shadow-nav: none;
-  --glow-indigo: rgba(99, 102, 241, 0.2);
-  --glow-violet: rgba(139, 92, 246, 0.15);
+  --glow-indigo: rgba(239, 70, 44, 0.2);
+  --glow-violet: rgba(239, 70, 44, 0.1);
   --hairline: rgba(255, 255, 255, 0.06);
 }
 
@@ -80,13 +84,42 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 102, 204, 0.2);
+  background: rgba(239, 70, 44, 0.22);
   color: #1d1d1f;
 }
 
 .dark ::selection {
-  background: rgba(99, 102, 241, 0.35);
+  background: rgba(239, 70, 44, 0.35);
   color: #fafafa;
+}
+
+/* Partner logos: uniform box, brand tint on hover */
+.partner-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.65;
+  filter: grayscale(1);
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+  filter: grayscale(0) brightness(0) saturate(100%) invert(43%) sepia(79%)
+    saturate(2476%) hue-rotate(343deg) brightness(97%) contrast(92%);
+}
+
+.dark .partner-logo {
+  opacity: 0.75;
+  filter: grayscale(1) brightness(0) invert(1);
+}
+
+.dark .partner-logo:hover {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(79%) saturate(2476%)
+    hue-rotate(343deg) brightness(97%) contrast(92%);
 }
 
 /* Duplicated track: half width = one logo set; loop moves content left → right across the viewport */

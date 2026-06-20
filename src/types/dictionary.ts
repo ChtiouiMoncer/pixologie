@@ -41,6 +41,7 @@ export type ServicesDict = {
   title: string;
   subtitle: string;
   items: {
+    icon: "web" | "marketing" | "brand" | "performance";
     title: string;
     description: string;
     tags: string[];
@@ -63,6 +64,7 @@ export type PortfolioDict = {
     category: string;
     description: string;
     result: string;
+    logoSrc?: string;
     url?: string;
   }[];
   viewLabel: string;

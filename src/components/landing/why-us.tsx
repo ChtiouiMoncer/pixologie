@@ -35,7 +35,7 @@ export function WhyUs({ dict }: Props) {
               variants={fadeUp}
               className="relative rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-card)] sm:p-8 dark:border-white/[0.07] dark:bg-zinc-900/40 dark:shadow-none"
             >
-              <span className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-apple-blue-muted bg-apple-blue-muted text-sm font-semibold text-apple-blue dark:border-indigo-400/25 dark:bg-indigo-500/10 dark:text-indigo-200">
+              <span className="mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-apple-blue-muted bg-apple-blue-muted text-sm font-semibold text-apple-blue">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="text-lg font-semibold text-label dark:text-white">

@@ -27,14 +27,14 @@ function PartnerMark({
 }) {
   if (logoSrc) {
     return (
-      <div className="flex h-28 w-[260px] shrink-0 items-center justify-center px-2 sm:h-32 sm:w-[300px] lg:h-36 lg:w-[340px]">
+      <div className="flex h-20 w-44 shrink-0 items-center justify-center px-3 sm:h-20 sm:w-44">
         <Image
           src={logoSrc}
           alt={name}
-          width={340}
-          height={120}
+          width={176}
+          height={80}
           unoptimized
-          className="max-h-20 w-auto max-w-[240px] object-contain opacity-80 grayscale transition-[opacity,filter] duration-300 hover:opacity-100 hover:grayscale-0 sm:max-h-24 sm:max-w-[280px] lg:max-h-28 lg:max-w-[320px] dark:opacity-95 dark:grayscale-0 dark:brightness-0 dark:invert dark:hover:opacity-100"
+          className="partner-logo"
         />
       </div>
     );
@@ -42,7 +42,7 @@ function PartnerMark({
 
   return (
     <div
-      className="flex h-28 w-[260px] shrink-0 items-center justify-center rounded-2xl border border-border-subtle bg-control px-3 text-base font-semibold tracking-wide text-label-secondary sm:h-32 sm:w-[300px] lg:h-36 lg:w-[340px] dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400"
+      className="flex h-20 w-44 shrink-0 items-center justify-center rounded-2xl border border-border-subtle bg-control px-3 text-base font-semibold tracking-wide text-label-secondary dark:border-white/[0.08] dark:bg-white/[0.04] dark:text-zinc-400"
       role="img"
       aria-label={name}
     >
@@ -70,7 +70,7 @@ export function TrustCarousel({ dict }: Props) {
         >
           <motion.p
             variants={fadeUp}
-            className="text-xs font-semibold uppercase tracking-[0.2em] text-apple-blue dark:text-indigo-300/90"
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-apple-blue"
           >
             {dict.sectionLabel}
           </motion.p>

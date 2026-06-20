@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { ServicesDict } from "@/types/dictionary";
 import { SectionHeading } from "./section-heading";
+import { serviceIcons } from "./service-icons";
 import { fadeUp, stagger } from "@/lib/motion";
 
 type Props = {
@@ -29,13 +30,21 @@ export function Services({ dict }: Props) {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
-          {dict.items.map((item) => (
+          {dict.items.map((item) => {
+            const Icon = serviceIcons[item.icon];
+            return (
             <motion.li
               key={item.title}
               variants={fadeUp}
               className="group relative overflow-hidden rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-card)] sm:p-8 dark:border-white/[0.07] dark:bg-gradient-to-b dark:from-white/[0.05] dark:to-transparent dark:shadow-none"
             >
               <div className="pointer-events-none absolute inset-px rounded-2xl ring-1 ring-black/[0.04] dark:ring-white/[0.04]" />
+              <div
+                className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-apple-blue/15 bg-apple-blue-muted text-apple-blue transition group-hover:border-apple-blue/30 group-hover:bg-apple-blue/15 dark:border-apple-blue/20 dark:bg-apple-blue/10"
+                aria-hidden
+              >
+                <Icon className="h-6 w-6" />
+              </div>
               <h3 className="text-lg font-semibold text-label dark:text-white">
                 {item.title}
               </h3>
@@ -53,7 +62,8 @@ export function Services({ dict }: Props) {
                 ))}
               </ul>
             </motion.li>
-          ))}
+            );
+          })}
         </motion.ul>
       </div>
     </section>

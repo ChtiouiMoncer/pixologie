@@ -40,10 +40,10 @@ export function Contact({ dict }: Props) {
   
 
   const fieldClass =
-    "h-11 rounded-xl border border-border bg-surface px-3 text-sm text-label outline-none transition placeholder:text-label-tertiary focus:border-apple-blue focus:ring-2 focus:ring-apple-blue/20 dark:border-white/10 dark:bg-zinc-950/80 dark:text-white dark:focus:border-indigo-400/50 dark:focus:ring-indigo-500/30";
+    "h-11 rounded-xl border border-border bg-surface px-3 text-sm text-label outline-none transition placeholder:text-label-tertiary focus:border-apple-blue focus:ring-2 focus:ring-apple-blue/20 dark:border-white/10 dark:bg-zinc-950/80 dark:text-white dark:focus:border-apple-blue dark:focus:ring-apple-blue/25";
 
   const textareaClass =
-    "resize-none rounded-xl border border-border bg-surface px-3 py-2 text-sm text-label outline-none transition placeholder:text-label-tertiary focus:border-apple-blue focus:ring-2 focus:ring-apple-blue/20 dark:border-white/10 dark:bg-zinc-950/80 dark:text-white dark:focus:border-indigo-400/50 dark:focus:ring-indigo-500/30";
+    "resize-none rounded-xl border border-border bg-surface px-3 py-2 text-sm text-label outline-none transition placeholder:text-label-tertiary focus:border-apple-blue focus:ring-2 focus:ring-apple-blue/20 dark:border-white/10 dark:bg-zinc-950/80 dark:text-white dark:focus:border-apple-blue dark:focus:ring-apple-blue/25";
 
   return (
     <section
@@ -67,7 +67,7 @@ export function Contact({ dict }: Props) {
           {dict.emailIntro}{" "}
           <a
             href={`mailto:${dict.contactEmail}`}
-            className="font-medium text-apple-blue underline-offset-2 hover:underline dark:text-indigo-300"
+            className="font-medium text-apple-blue underline-offset-2 hover:underline"
           >
             {dict.contactEmail}
           </a>

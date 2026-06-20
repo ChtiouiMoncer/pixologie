@@ -35,7 +35,7 @@ const dictionary: Dictionary = {
     titleAccent: "inevitable.",
     subtitle:
       "We build high-performance websites and growth-driven marketing strategies by combining storytelling, acquisition, and conversion design into one unified system where every interaction creates value.",
-    primaryCta: "Unlock your growth",
+    primaryCta: "Get in touch",
     secondaryCta: "View selected work",
     stats: [
       { value: "10+", label: "Projects delivered" },
@@ -55,21 +55,25 @@ const dictionary: Dictionary = {
       "Modular teams, senior operators, and a single thread of accountability from brief to reporting.",
       items: [
         {
+          icon: "web",
           title: "Web development",
           description: "Modern websites built for performance and conversion.",
           tags: ["Web", "UX", "Development"],
         },
         {
+          icon: "marketing",
           title: "Digital marketing",
           description: "Ads and strategies to grow your audience and sales.",
           tags: ["Ads", "Growth", "Traffic"],
         },
         {
+          icon: "brand",
           title: "Brand identity",
           description: "Clear and consistent branding across all channels.",
           tags: ["Branding", "Design"],
         },
         {
+          icon: "performance",
           title: "Performance optimization",
           description: "Data-driven improvements to maximize results.",
           tags: ["CRO", "Analytics"],
@@ -110,6 +114,7 @@ const dictionary: Dictionary = {
         description:
           "UI redesign and backend operations optimization to improve user experience and overall performance.",
         result: "Modernized interface + optimized operations",
+        logoSrc: "/partners/riva.png",
         url: "https://rivatrip.com/",
       },
       {
@@ -118,6 +123,7 @@ const dictionary: Dictionary = {
         description:
           "Full e-commerce website built for a Tunisian fashion brand with a modern shopping experience.",
         result: "Ready-to-sell online store",
+        logoSrc: "/partners/floral.jpg",
         url: "https://floralfashion.tn/",
       },
       {
@@ -126,6 +132,7 @@ const dictionary: Dictionary = {
         description:
           "Complete website redesign for a company specialized in metal shutter manufacturing and repair services.",
         result: "Modern website + improved brand image",
+        logoSrc: "/partners/fmf.png",
         url: "https://www.rideaux-francemetal.fr/",
       },
     ],
@@ -197,7 +204,7 @@ const dictionary: Dictionary = {
     address: "IMM GLOULOU 4000, Sousse ville, Sousse",
     email: "contact@pixologie.agency",
     phone: "+216 52 956 813",
-    phoneTel: "+21652956813",
+    phoneTel: "+21623664317",
   },
 };
 

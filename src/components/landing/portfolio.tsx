@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import type { PortfolioDict } from "@/types/dictionary";
 import { SectionHeading } from "./section-heading";
@@ -55,8 +56,20 @@ export function Portfolio({ dict }: Props) {
             <motion.article
               key={project.name}
               variants={fadeUp}
-              className="flex flex-col gap-6 rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-card)] sm:flex-row sm:items-center sm:justify-between sm:p-8 dark:border-white/[0.07] dark:bg-gradient-to-r dark:from-white/[0.04] dark:to-transparent dark:shadow-none"
+              className="flex flex-col gap-6 rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-card)] sm:flex-row sm:items-center sm:gap-6 sm:p-8 dark:border-white/[0.07] dark:bg-gradient-to-r dark:from-white/[0.04] dark:to-transparent dark:shadow-none"
             >
+              {project.logoSrc ? (
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-border-subtle bg-control p-2.5 sm:h-20 sm:w-20 sm:p-3 dark:border-white/10 dark:bg-white/[0.04]">
+                  <Image
+                    src={project.logoSrc}
+                    alt={project.name}
+                    width={80}
+                    height={80}
+                    unoptimized
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ) : null}
               <div className="flex flex-1 flex-col gap-2">
                 <div className="flex flex-wrap items-center gap-3">
                   <h3 className="text-lg font-semibold text-label dark:text-white">
@@ -70,7 +83,7 @@ export function Portfolio({ dict }: Props) {
                   {project.description}
                 </p>
               </div>
-              <div className="flex shrink-0 flex-col items-start gap-4 sm:items-end">
+              <div className="flex shrink-0 flex-col items-start gap-4 sm:min-w-[200px] sm:items-end">
                 <p className="text-sm font-medium text-[#008547] dark:text-emerald-300/90">
                   {project.result}
                 </p>

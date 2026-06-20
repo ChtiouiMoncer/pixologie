@@ -26,19 +26,19 @@ export function Footer({ dict }: Props) {
           <div className="grid gap-3 sm:max-w-sm lg:ml-auto lg:w-full">
             <a
               href={`mailto:${dict.email}`}
-              className="group flex items-center justify-between rounded-2xl border border-border bg-surface px-4 py-3 text-sm transition hover:border-apple-blue/50 hover:bg-apple-blue-muted/50 dark:border-white/12 dark:bg-white/[0.03] dark:hover:border-indigo-300/40 dark:hover:bg-white/[0.07]"
+              className="group flex items-center justify-between rounded-2xl border border-border bg-surface px-4 py-3 text-sm transition hover:border-apple-blue/50 hover:bg-apple-blue-muted/50 dark:border-white/12 dark:bg-white/[0.03] dark:hover:border-apple-blue/40 dark:hover:bg-white/[0.07]"
             >
               <span className="text-label-secondary dark:text-zinc-400">Email</span>
-              <span className="font-medium text-apple-blue underline-offset-2 group-hover:underline dark:text-indigo-300">
+              <span className="font-medium text-apple-blue underline-offset-2 group-hover:underline">
                 {dict.email}
               </span>
             </a>
             <a
               href={`tel:${dict.phoneTel}`}
-              className="group flex items-center justify-between rounded-2xl border border-border bg-surface px-4 py-3 text-sm transition hover:border-apple-blue/50 hover:bg-apple-blue-muted/50 dark:border-white/12 dark:bg-white/[0.03] dark:hover:border-indigo-300/40 dark:hover:bg-white/[0.07]"
+              className="group flex items-center justify-between rounded-2xl border border-border bg-surface px-4 py-3 text-sm transition hover:border-apple-blue/50 hover:bg-apple-blue-muted/50 dark:border-white/12 dark:bg-white/[0.03] dark:hover:border-apple-blue/40 dark:hover:bg-white/[0.07]"
             >
               <span className="text-label-secondary dark:text-zinc-400">Phone</span>
-              <span className="font-medium text-label group-hover:text-apple-blue dark:text-zinc-200 dark:group-hover:text-indigo-300">
+              <span className="font-medium text-label group-hover:text-apple-blue dark:text-zinc-200">
                 {dict.phone}
               </span>
             </a>
